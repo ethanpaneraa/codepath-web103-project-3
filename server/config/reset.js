@@ -5,14 +5,16 @@ import resources from "../data/resources.js";
 const createResourcesTable = async () => {
 
     const createTableQuery = `
-    
+        DROP TABLE resources;
+
         CREATE TABLE IF NOT EXISTS resources (
 
             id SERIAL PRIMARY KEY, 
             name VARCHAR(255) NOT NULL, 
             website VARCHAR(255) NOT NULL,
             about TEXT NOT NULL,
-            phone VARCHAR(100) NOT NULL
+            phone VARCHAR(100) NOT NULL,
+            location VARCHAR(255) NOT NULL
         )
     `;
 
@@ -32,14 +34,15 @@ const seedResourcesTable = async () => {
     resources.forEach((resource) => {
 
         const insertQuery = {
-            text: `INSERT INTO resources (name, website, about, phone) VALUES ($1, $2, $3, $4)`,
+            text: `INSERT INTO resources (name, website, about, phone, location) VALUES ($1, $2, $3, $4, $5)`,
         };
 
         const values = [
             resource.name,
             resource.website,
             resource.about,
-            resource.phone
+            resource.phone,
+            resource.location, 
         ];
 
         pool.query(insertQuery, values, (error, res) => {
