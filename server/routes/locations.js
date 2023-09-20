@@ -5,4 +5,6 @@ const router = express.Router();
 
 router.get("/", locationsController.fetchLocations)
 
+router.get("/:location", locationsController.fetchResourcesByLocation); 
+
 export default router; 

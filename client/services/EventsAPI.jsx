@@ -17,11 +17,15 @@ class EventsAPI {
     };
 
     async getEventsById(id) {
+
+        console.log("LOOK HEREEE"); 
+
         if (!id) {
             throw new Error('Missing id argument');
         };
         try {
             const response = await axios.get(`${this.remoteHostUrl}/resources/${id}`);
+            console.log("response.data", response.data);
             return response.data;
         }
         catch (error) {
@@ -30,4 +34,4 @@ class EventsAPI {
     };
 };
 
-export default new EventsAPI("http://:localhost:3000")
+export default new EventsAPI("http://localhost:3000")

@@ -14,7 +14,10 @@ const createResourcesTable = async () => {
             website VARCHAR(255) NOT NULL,
             about TEXT NOT NULL,
             phone VARCHAR(100) NOT NULL,
-            location VARCHAR(255) NOT NULL
+            location VARCHAR(255) NOT NULL,
+            image VARCHAR(255) NOT NULL,
+            date DATE NOT NULL,
+            time TIME NOT NULL
         )
     `;
 
@@ -34,7 +37,7 @@ const seedResourcesTable = async () => {
     resources.forEach((resource) => {
 
         const insertQuery = {
-            text: `INSERT INTO resources (name, website, about, phone, location) VALUES ($1, $2, $3, $4, $5)`,
+            text: `INSERT INTO resources (name, website, about, phone, location, image, date, time) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
         };
 
         const values = [
@@ -43,6 +46,9 @@ const seedResourcesTable = async () => {
             resource.about,
             resource.phone,
             resource.location, 
+            resource.image, 
+            resource.date, 
+            resource.time
         ];
 
         pool.query(insertQuery, values, (error, res) => {

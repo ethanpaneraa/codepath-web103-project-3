@@ -9,6 +9,17 @@ const fetchLocations = async (req, res) => {
     };
 };
 
+const fetchResourcesByLocation = async (req, res) => {
+    try {
+        console.log(req.params.location);
+        const results = await pool.query("SELECT * FROM resources WHERE location = $1", [req.params.location]);
+        res.status(200).json(results.rows);
+    } catch (error) {
+        res.status(409).json({ error: error.message });
+    };
+};
+
 export default {
-    fetchLocations,
+    fetchLocations, 
+    fetchResourcesByLocation
 };

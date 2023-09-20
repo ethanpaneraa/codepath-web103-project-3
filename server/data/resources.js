@@ -6,8 +6,10 @@ const resources = [
         website: "https://www.logansquaremutualaid.org/find-resources-1", 
         about: "Logan Square Mutual Aid is part of a city-wide mutual aid effort, organized neighborhood by neighborhood. We all live here in Logan Square, and, when the coronavirus broke out in Chicago, many of us began looking for ways to contribute what we could to our neighbors. Seeing as we are stronger together, we are excited to join forces here. We know that during this pandemic there will be economic, health, and other hardships. We are here to support the community in fulfilling those immediate essential needs. We are providing food so no one goes hungry, prescription and grocery pickups for people who are sick, elderly, or immunocompromised, and whatever other needs arise.",
         phone: "773-234-8313", 
-        location: "Logan Square", 
-
+        location: "logansquare", 
+        image: "https://cdn.choosechicago.com/uploads/2019/05/2019_Neighborhoods_Logan_Square_0008-1800x996.jpg", 
+        date: "2023-07-30",
+        time: "12:00:00",
     },
     {
         id: 2, 
@@ -15,7 +17,10 @@ const resources = [
         website: "https://www.lsnaphilly.org/resources/", 
         about: "The Logan Square Neighborhood Association is an all-volunteer community organization. It is dedicated to maintaining and improving the Logan Square neighborhood for the enjoyment of all who come there to live, work and visit. Use the links to the left to find out more about the work of the LSNA.",
         phone: "", 
-        location: "Logan Square"
+        location: "logansquare",
+        image: "https://www.chicagomag.com/wp-content/archive/city-life/June-2018/Hipster-Logan-Square-Is-Done-What-now/logan-sq.jpg", 
+        date: "2023-07-30",
+        time: "12:00:00",
     }, 
     {
         id: 3, 
@@ -23,7 +28,10 @@ const resources = [
         website:"https://www.palenquelsna.org/", 
         about: "Palenque LSNA is a catalyst for Black, Brown, Indigenous, and Immigrant communities and allies to take care of one another and take strategic action for systemic change and a just, resilient, and joyful future.", 
         phone: "773-384-4370", 
-        location: "Logan Square", 
+        location: "logansquare", 
+        image: "https://media.timeout.com/images/105783141/image.jpg", 
+        date: "2023-07-30",
+        time: "12:00:00",
     },
     {
         id: 4, 
@@ -31,7 +39,10 @@ const resources = [
         website: "https://schoolinfo.cps.edu/mealdistributionsites/index.html", 
         about:  "CPS offers free meals during summer break at LunchStop sites across the city and at every school that is open for summer programs. All children up to the age of 18 may receive a meal at any site. ID is not required. Children must be present and meals must be consumed onsite. For questions, call (800) 359-2163 or text FOOD or COMIDA to 304-304.", 
         phone: "800-359-2163", 
-        location: "Chicago Downtown", 
+        location: "downtown", 
+        image: "https://secretchicago.com/wp-content/uploads/2022/01/Chicago-January-2-1024x554.jpg", 
+        date: "2023-07-30", 
+        time: "12:00:00",
     }, 
     {
         id: 5,
@@ -39,7 +50,10 @@ const resources = [
         website: "https://www.wickerparkbucktown.com/theneighborhood/community-resources/", 
         about: "‘The Chamber serves as a cornerstone of the Wicker Park and Bucktown commercial districts, advancing the financial goals of neighborhood businesses by enhancing the dynamic economic climate, increasing the neighborhood’s visibility and viability, and encouraging profitable relationships within the community’", 
         phone: "773-384-2672", 
-        location: "Wicker Park", 
+        location: "wickerpark", 
+        image: "https://cdn.choosechicago.com/uploads/2019/06/CH_ChooseChicago_2014_08_15_2468_WICKER_PARK_33a1b386-aef8-491b-8d77-064c93fdab65-2400x1600.jpg", 
+        date: "2023-06-01",
+        time: "12:00:00", 
     },
     {
         id: 6, 
@@ -47,7 +61,10 @@ const resources = [
         website: "https://wickerparkcomm.org/", 
         about: "The Wicker Park Committee celebrates the rich cultural diversity and historic character of the neighborhood.  We foster dialogue and activities among our residents, businesses, organizations, government agencies and officials.", 
         phone: "", 
-        location: "Wicker Park", 
+        location: "wickerpark", 
+        image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/9d/49/f7/photo2jpg.jpg?w=1200&h=1200&s=1", 
+        date: "2023-09-30",
+        time: "12:00:00",
     },
     {
         id: 7, 
@@ -55,7 +72,10 @@ const resources = [
         website: "https://www.the1stward.com/", 
         about: "We serve to create a ward where every resident has the resources and opportunities to thrive. Our office is committed to elevating marginalized voices, and collaborating with all interested stakeholders to build a community grounded in diversity, democracy and equity.",  
         phone: "872-206-2685", 
-        location: "Logan Square", 
+        location: "bucktown", 
+        image: "https://media.cntraveler.com/photos/59e4fc4d85f4523b0e52760d/16:9/w_4543,h_2555,c_limit/WickerPark_GettyImages-476748645.jpg", 
+        date: "2023-07-30", 
+        time: "12:00:00",
     },
     {
         id: 8, 
@@ -63,7 +83,10 @@ const resources = [
         website: "https://www.fhfa.gov/Homeownersbuyer/MortgageAssistance/Pages/Coronavirus-Assistance-Information.aspx", 
         about: "The Federal Housing Finance Agency (FHFA) was established by the Housing and Economic Recovery Act of 2008 (HERA) and is responsible for the effective supervision, regulation, and housing mission oversight of the Federal National Mortgage Association (Fannie Mae), the Federal Home Loan Mortgage Corporation (Freddie Mac), and the Federal Home Loan Bank System, which includes the 11 Federal Home Loan Banks (FHLBanks) and the Office of Finance (OF). The Agency's mission is to ensure that Fannie Mae and Freddie Mac (the Enterprises) and the FHLBanks (together, the regulated entities) fulfill their mission by operating in a safe and sound manner to serve as a reliable source of liquidity and funding for housing finance and community investment. Since 2008, FHFA has also served as conservator of Fannie Mae and Freddie Mac.", 
         phone: "",  
-        location: "Chicago Downtown",
+        location: "downtown",
+        image: "https://tourscanner.com/blog/wp-content/uploads/2022/08/things-to-do-in-Downtown-Chicago.jpg", 
+        date: "2023-07-30", 
+        time: "12:00:00",
     },
 ];
 

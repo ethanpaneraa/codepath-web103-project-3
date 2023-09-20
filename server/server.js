@@ -25,9 +25,6 @@ else if (process.env.NODE_ENV === 'production') {
     app.use(express.static('public'))
 }
 
-// specify the api path for the server to use
-
-
 if (process.env.NODE_ENV === 'production') {
     app.get('/*', (_, res) =>
         res.sendFile(path.resolve('public', 'index.html'))
